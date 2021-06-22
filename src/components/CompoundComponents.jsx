@@ -5,6 +5,11 @@ const Checkbox = ({children }) =>{
     const [checked, setChecked] = useState(true)
   const  allChildren =  Children.map(children,child =>{
       
+     if(typeof child.type === 'string' ){
+
+        return null
+     }
+
      const clone = cloneElement(child, {
          checked, setChecked
      })
@@ -30,6 +35,7 @@ export default function CompoundComponents() {
         <Checkbox>
               <CheckboxInput/>
               <Label>Check box label</Label>
+              <p>It will not render as child</p>
         </Checkbox>
     )
 }

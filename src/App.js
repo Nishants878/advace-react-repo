@@ -4,18 +4,28 @@ import './App.css';
 import CommonProps from './components/CommonProps'
 import StateMachine from './components/StateMachine'
 import StateMachineFetch from './components/StateMachineFetch';
-import CompoundComponents from './components/CompoundComponents'
+import CompoundComponents from './components/CompoundComponents';
+import MemoComponent from './components/MemoComponent';
+import UseContextExample from './components/UseContextExample'
+import{ BrowserRouter, Route, Link } from 'react-router-dom'
+
 
 
 function App() {
 
   return (
+    <BrowserRouter>
+      
+  
     <div className="App">
     <CommonProps/>
     <StateMachine/>
     <StateMachineFetch/>
     <CompoundComponents/>
+    <MemoComponent/>
+    <UseContextExample/>
     </div>
+    </BrowserRouter>
   );
 }
 
