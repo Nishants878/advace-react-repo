@@ -7,6 +7,7 @@ import StateMachineFetch from './components/StateMachineFetch';
 import CompoundComponents from './components/CompoundComponents';
 import MemoComponent from './components/MemoComponent';
 import UseContextExample from './components/UseContextExample'
+import ClousreAndCleanup from './components/ClousreAndCleanup'
 import{ BrowserRouter, Route, Link } from 'react-router-dom'
 
 
@@ -24,6 +25,7 @@ function App() {
     <CompoundComponents/>
     <MemoComponent/>
     <UseContextExample/>
+    <ClousreAndCleanup/>
     </div>
     </BrowserRouter>
   );
