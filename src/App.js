@@ -12,6 +12,7 @@ import{ BrowserRouter, Route, Link } from 'react-router-dom'
 
 
 
+
 function App() {
 
   return (
@@ -21,11 +22,13 @@ function App() {
     <div className="App">
     <CommonProps/>
     <StateMachine/>
+ 
     <StateMachineFetch/>
     <CompoundComponents/>
     <MemoComponent/>
     <UseContextExample/>
     <ClousreAndCleanup/>
+   
     </div>
     </BrowserRouter>
   );
